@@ -50,9 +50,7 @@ This directory was formally merely called "Support".
 
 ### TouchJSON
 
-TouchJSON is parser and generator for JSON, implemented in Objective C.
-
-*Please note that TouchJSON is completely stand-alone and can be used independently from other Touchcode components.*
+TouchJSON is parser and generator for JSON, implemented in Objective C. TouchJSON has now been moved to a standalone github project: http://github.com/schwa/TouchJSON
 
 ### TouchNotifications
 
@@ -70,7 +68,7 @@ TODO
 
 TouchXML is a lightweight replacement for Cocoa's NSXML* cluster of classes. It is based on the commonly available Open Source libxml2 library.
 
-*Please note that TouchXML is completely stand-alone and can be used independently from other Touchcode components.*
+TouchXML has now been moved to a standalone github project: http://github.com/schwa/TouchXML
 
 ## Other Directories
 
