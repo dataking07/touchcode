@@ -56,7 +56,12 @@
 
 		#define AssertUnimplemented_() NSAssert(0, @"Method unimplemented")
 
-        #define AssertCast_(CLS_, OBJ_) ({ Assert_([(OBJ_) isKindOfClass:[CLS_ class]], @"Object %@ not of class %@", OBJ_, NSStringFromClass([CLS_ class])); (CLS_ *)(OBJ_); })
+        #define AssertCast_(CLS_, OBJ_) ({ \
+            Class theDesiredClass = [CLS_ class]; \
+            id theObject = (OBJ_); \
+            NSAssert2([theObject isKindOfClass:theDesiredClass], @"Object %@ not of class %@", theObject, NSStringFromClass(theDesiredClass)); \
+            (CLS_ *)theObject; \
+            })
 	#endif
 
     #import <Foundation/Foundation.h>
