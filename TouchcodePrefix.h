@@ -38,8 +38,12 @@
 
 	#if DEBUG == 1
 		#define Assert_(test, ...) NSAssert((test), [NSString stringWithFormat:__VA_ARGS__])
+
 		#define AssertC_(test, ...) NSAssertC((test), [NSString stringWithFormat:__VA_ARGS__])
+
 		#define AssertUnimplemented_() NSAssert(0, @"Method unimplemented")
+
+        #define AssertCast_(CLS_, OBJ_) ({ (CLS_ *)(OBJ_); })
 	#else
 		#define Assert_(test, ...) \
 			do \
@@ -47,11 +51,14 @@
 				if (!(test)) NSLog(__VA_ARGS__); \
 				} \
 			while (0)
+
 		#define AssertC_(test, ...) Assert_(test, __VA_ARGS__)
+
 		#define AssertUnimplemented_() NSAssert(0, @"Method unimplemented")
+
+        #define AssertCast_(CLS_, OBJ_) ({ Assert_([(OBJ_) isKindOfClass:[CLS_ class]], @"Object %@ not of class %@", OBJ_, NSStringFromClass([CLS_ class])); (CLS_ *)(OBJ_); })
 	#endif
 
     #import <Foundation/Foundation.h>
-    #import <UIKit/UIKit.h>
 	
 #endif
