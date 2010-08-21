@@ -38,60 +38,42 @@ Unless otherwise stated all (see below) code created as part of the Touchcode pr
 
 Touchcode includes portions of other code libraries. This code may be supplied under a different license to Touchcode.
 
-## Sub-Projects Directories
+## Where Is Everything?
+
+All touchcode sub-projects have now been broken out into several smaller github repositories:
 
 ### TouchFoundation
 
-A smorgasbord of lots of relatively stand-alone classes and categories. A lot of the other TouchCode components depend on TouchFoundation.
+http://github.com/schwa/TouchFoundation
 
-All source code in this directory should only depend on the Foundation framework. This code is therefore compatible with iPhone and Mac OS X.
+### TouchHTTPD
 
-This directory was formally merely called "Support".
+http://github.com/schwa/TouchHTTPD
 
 ### TouchJSON
 
-TouchJSON is parser and generator for JSON, implemented in Objective C. TouchJSON has now been moved to a standalone github project: http://github.com/schwa/TouchJSON
+http://github.com/schwa/TouchJSON
 
 ### TouchNotifications
 
-TODO
+http://github.com/schwa/TouchNotifications
 
 ### TouchRSS
 
-TODO
+http://github.com/schwa/TouchRSS
+
+### TouchSQL
+
+http://github.com/schwa/TouchSQL
 
 ### TouchUI
 
-TODO
+http://github.com/schwa/TouchUI
 
 ### TouchXML
 
-TouchXML is a lightweight replacement for Cocoa's NSXML* cluster of classes. It is based on the commonly available Open Source libxml2 library.
+http://github.com/schwa/TouchXML
 
-TouchXML has now been moved to a standalone github project: http://github.com/schwa/TouchXML
-
-## Other Directories
-
-### Deprecated
-
-TODO
-
-### Documentation
-
-TODO
-
-### Experimental
-
-
-TODO
-
-### Misc
-
-TODO
-
-### Scripts
-
-TODO
 
 [LOGO]: http://touchcode.googlecode.com/svn/wiki/touchcode_logo_1.png
 [News]: http://code.google.com/p/touchcode/wiki/News
