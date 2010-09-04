@@ -44,36 +44,35 @@ All touchcode sub-projects have now been broken out into several smaller github 
 
 ### TouchFoundation
 
-http://github.com/schwa/TouchFoundation
+<http://github.com/schwa/TouchFoundation>
 
 ### TouchHTTPD
 
-http://github.com/schwa/TouchHTTPD
+<http://github.com/schwa/TouchHTTPD>
 
 ### TouchJSON
 
-http://github.com/schwa/TouchJSON
+<http://github.com/schwa/TouchJSON>
 
 ### TouchNotifications
 
-http://github.com/schwa/TouchNotifications
+<http://github.com/schwa/TouchNotifications>
 
 ### TouchRSS
 
-http://github.com/schwa/TouchRSS
+<http://github.com/schwa/TouchRSS>
 
 ### TouchSQL
 
-http://github.com/schwa/TouchSQL
+<http://github.com/schwa/TouchSQL>
 
 ### TouchUI
 
-http://github.com/schwa/TouchUI
+<http://github.com/schwa/TouchUI>
 
 ### TouchXML
 
-http://github.com/schwa/TouchXML
-
+<http://github.com/schwa/TouchXML>
 
 [LOGO]: http://touchcode.googlecode.com/svn/wiki/touchcode_logo_1.png
 [News]: http://code.google.com/p/touchcode/wiki/News
